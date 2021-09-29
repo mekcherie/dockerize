@@ -1,6 +1,5 @@
 import os
 import requests
-
 from pprint import PrettyPrinter
 from datetime import datetime, timedelta
 from dotenv import  load_dotenv
