@@ -15,7 +15,7 @@ app = Flask(__name__)\
 
 # Get the API key from the '.env' file
 load_dotenv()
-API_KEY = os.getenv('API_KEY')
+API_KEY = os.getenv('API_KEY') 
 
 pp = PrettyPrinter(indent=4)
 
@@ -154,4 +154,5 @@ def historical_results():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
+    # app.run(debug=True)
